@@ -59,25 +59,29 @@
   /* ── 4. Hero canvas: diaspora network ───────────────── */
   var CITIES = [
     // 侨乡 origins
-    { en: 'Guangzhou',   zh: '广州',     lon: 113.26, lat: 23.13, hub: true, lab: { a: 'end', dx: -9, dy: -7 } },
-    { en: 'Chaozhou',    zh: '潮州',     lon: 116.62, lat: 23.66, hub: true, lab: { hide: true } },
-    { en: 'Quanzhou',    zh: '泉州',     lon: 118.68, lat: 24.87, hub: true, lab: { a: 'start', dx: 8, dy: -8 } },
-    { en: 'Jiangmen',    zh: '江门',     lon: 113.08, lat: 22.58, hub: true, lab: { hide: true } },
-    { en: 'Hong Kong',   zh: '香港',     lon: 114.17, lat: 22.32, hub: true, lab: { a: 'middle', dx: 0, dy: 18 } },
+    { en: 'Guangzhou',   zh: '广州',     lon: 113.26, lat: 23.13, hub: true, lab: { a: 'end', dx: -9, dy: -7 } },    // 0
+    { en: 'Chaozhou',    zh: '潮州',     lon: 116.62, lat: 23.66, hub: true, lab: { a: 'middle', dx: 2, dy: -14 } }, // 1
+    { en: 'Quanzhou',    zh: '泉州',     lon: 118.68, lat: 24.87, hub: true, lab: { a: 'start', dx: 8, dy: 12 } },   // 2
+    { en: 'Jiangmen',    zh: '江门',     lon: 113.08, lat: 22.58, hub: true, lab: { hide: true } },                  // 3
+    { en: 'Hong Kong',   zh: '香港',     lon: 114.17, lat: 22.32, hub: true, lab: { a: 'middle', dx: 0, dy: 18 } },  // 4
+    { en: 'Wenzhou',     zh: '温州',     lon: 120.65, lat: 28.01, hub: true, lab: { a: 'start', dx: 8, dy: -8 } },   // 5
     // destinations
-    { en: 'Penang',      zh: '槟城',     lon: 100.33, lat: 5.41,   label: true, lab: { a: 'start', dx: 7, dy: 12 } },
-    { en: 'Jakarta',     zh: '雅加达',   lon: 106.85, lat: -6.21,  label: true, lab: { a: 'end', dx: -7, dy: 3 } },
-    { en: 'Surabaya',    zh: '泗水',     lon: 114.22, lat: -7.25,  label: true, lab: { a: 'start', dx: 7, dy: 3 } },
-    { en: 'Bangkok',     zh: '曼谷',     lon: 100.50, lat: 13.76,  label: true, lab: { a: 'end', dx: -7, dy: -6 } },
-    { en: 'San Francisco', zh: '旧金山', lon: -122.42, lat: 37.77, label: true, lab: { a: 'end', dx: -7, dy: -4 } },
-    { en: 'Toronto',     zh: '多伦多',   lon: -79.38, lat: 43.65,  label: true, lab: { a: 'start', dx: 8, dy: 14 } },
-    { en: 'Sydney',      zh: '悉尼',     lon: 151.21, lat: -33.87, label: true, lab: { a: 'start', dx: 7, dy: 3 } },
-    { en: 'Mauritius',   zh: '毛里求斯', lon: 57.55,  lat: -20.16, label: true, lab: { a: 'start', dx: 7, dy: 3 } },
-    { en: 'Prato',       zh: '普拉托',   lon: 11.10,  lat: 43.88,  label: true, lab: { a: 'start', dx: 7, dy: -4 } }
+    { en: 'Penang',      zh: '槟城',     lon: 100.33, lat: 5.41,   label: true, lab: { a: 'start', dx: 7, dy: 12 } },// 6
+    { en: 'Singapore',   zh: '新加坡',   lon: 103.82, lat: 1.35,   label: true, lab: { a: 'start', dx: 7, dy: 6 } }, // 7
+    { en: 'Jakarta',     zh: '雅加达',   lon: 106.85, lat: -6.21,  label: true, lab: { a: 'end', dx: -7, dy: 3 } },  // 8
+    { en: 'Surabaya',    zh: '泗水',     lon: 114.22, lat: -7.25,  label: true, lab: { a: 'start', dx: 7, dy: 3 } }, // 9
+    { en: 'Bangkok',     zh: '曼谷',     lon: 100.50, lat: 13.76,  label: true, lab: { a: 'end', dx: -7, dy: -6 } }, // 10
+    { en: 'San Francisco', zh: '旧金山', lon: -122.42, lat: 37.77, label: true, lab: { a: 'start', dx: 8, dy: 16 } },// 11
+    { en: 'Toronto',     zh: '多伦多',   lon: -79.38, lat: 43.65,  label: true, lab: { a: 'start', dx: 8, dy: 14 } },// 12
+    { en: 'Sydney',      zh: '悉尼',     lon: 151.21, lat: -33.87, label: true, lab: { a: 'start', dx: 7, dy: 3 } }, // 13
+    { en: 'Mauritius',   zh: '毛里求斯', lon: 57.55,  lat: -20.16, label: true, lab: { a: 'start', dx: 7, dy: 3 } }, // 14
+    { en: 'Prato',       zh: '普拉托',   lon: 11.10,  lat: 43.88,  label: true, lab: { a: 'start', dx: 7, dy: -4 } } // 15
   ];
   var ARCS = [
-    [0, 9], [4, 9], [0, 10], [3, 10], [1, 8], [2, 5],
-    [2, 6], [1, 7], [0, 11], [2, 12], [4, 13]
+    [0, 11], [4, 11], [0, 12], [3, 12], [1, 10], [2, 6],
+    [2, 8], [1, 9], [0, 13], [2, 14], [4, 15],
+    [5, 15],  // 温州 — 普拉托
+    [4, 7]    // 香港 — 新加坡
   ];
 
   var canvas = document.getElementById('netCanvas');
