@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fanghao Chen 陈方豪 · Economics of Ethnic Networks</title>
+<meta name="description" content="Fanghao Chen, Assistant Professor at Jinan University. Research on the economics of ethnic networks and overseas Chinese.">
+<link rel="icon" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="10" fill="%23B01E23"/%3E%3Ctext x="32" y="44" font-size="36" text-anchor="middle" fill="%23F6F1E8" font-family="serif" font-weight="bold"%3E陳%3C/text%3E%3C/svg%3E'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700;9..144,900&family=Archivo:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-lang="en">
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <a class="nav-brand" href="#top">
+    <span class="nav-seal">陳</span>
+    <span class="nav-name">Fanghao Chen</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#about"><span class="t-en">About</span><span class="t-zh">关于</span></a>
+    <a href="#research"><span class="t-en">Research</span><span class="t-zh">研究</span></a>
+    <a href="#teaching"><span class="t-en">Teaching</span><span class="t-zh">教学</span></a>
+    <a href="#data"><span class="t-en">Data</span><span class="t-zh">数据</span></a>
+    <a href="#network"><span class="t-en">Network</span><span class="t-zh">网络</span></a>
+  </nav>
+  <button class="lang-toggle" id="langToggle" aria-label="Switch language">中文</button>
+</header>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <canvas id="netCanvas" aria-hidden="true"></canvas>
+  <div class="genealogy-cols" aria-hidden="true">
+    <span>始遷祖諱德元字善長生四子長曰仁次曰義三曰禮四曰智</span>
+    <span>二世祖諱宗道明景泰三年舉人授漳州府通判卒於官</span>
+    <span>三世祖諱世昌字永言商於暹羅遂家焉歲壬午歸葬祖塋</span>
+    <span>四世祖諱廷芳字蘭畹弱冠渡南洋營米業於星洲</span>
+    <span>五世祖諱錦堂字墨林光绪乙酉科舉人修族譜十二卷</span>
+    <span>六世祖諱懷仁字抱樸民國初年設批局於汕頭</span>
+  </div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow reveal">
+      <span class="t-en">Jinan University · School of Management</span>
+      <span class="t-zh">暨南大学 · 管理学院</span>
+    </p>
+    <h1 class="hero-name reveal">
+      <span class="t-en">Fanghao Chen</span>
+      <span class="t-zh">陈方豪</span>
+    </h1>
+    <p class="hero-tagline reveal">
+      <span class="t-en">The Economics of Ethnic Networks</span>
+      <span class="t-zh">族群网络经济学</span>
+    </p>
+    <p class="hero-desc reveal">
+      <span class="t-en">How overseas Chinese communities formed, persisted, and continue to bridge China with the global economy — through trade, capital, technology, and knowledge.</span>
+      <span class="t-zh">海外华人网络如何形成、如何延续，又如何在贸易、资本、技术与知识的流动中，连接中国与全球经济。</span>
+    </p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-solid" href="#research">
+        <span class="t-en">Explore Research</span><span class="t-zh">进入研究</span>
+      </a>
+      <a class="btn btn-ghost t-en" href="assets/FanghaoChen_CV_260621.pdf" target="_blank" rel="noopener">Download CV</a>
+      <a class="btn btn-ghost t-zh" href="assets/陈方豪_暨大管院_260621.pdf" target="_blank" rel="noopener">下载简历</a>
+    </div>
+  </div>
+  <a class="hero-scroll" href="#about" aria-label="Scroll down">
+    <span class="t-en">Scroll</span><span class="t-zh">向下</span>
+    <i></i>
+  </a>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-eyebrow">01 · <span class="t-en">About</span><span class="t-zh">关于</span></p>
+      <h2 class="sec-title"><span class="t-en">Roots &amp; Routes</span><span class="t-zh">根脉与航路</span></h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="about-grid">
+      <figure class="about-portrait reveal">
+        <img src="assets/img/business.jpg" alt="Fanghao Chen portrait">
+        <figcaption>
+          <span class="t-en">Assistant Professor, School of Management, Jinan University</span>
+          <span class="t-zh">暨南大学管理学院助理教授</span>
+        </figcaption>
+      </figure>
+      <div class="about-body">
+        <p class="about-lead reveal">
+          <span class="t-en">I study the economic life of migration networks — how clan genealogies, hometown ties, and diaspora communities quietly move goods, capital, technology, and ideas across borders.</span>
+          <span class="t-zh">我研究移民网络的经济生命——宗族族谱、同乡纽带与侨乡社群，如何在国与国之间悄然输送货物、资本、技术与观念。</span>
+        </p>
+        <ul class="about-facts reveal">
+          <li>
+            <strong><span class="t-en">Assistant Professor</span><span class="t-zh">助理教授</span></strong>
+            <span><span class="t-en">School of Management, Jinan University</span><span class="t-zh">暨南大学管理学院</span></span>
+          </li>
+          <li>
+            <strong><span class="t-en">Research Associate</span><span class="t-zh">研究员</span></strong>
+            <span><span class="t-en">Research Center for Industrial Development of Guangdong &amp; Regional Cooperation with HK, Macao &amp; Taiwan</span><span class="t-zh">广东产业发展与粤港澳台区域合作研究中心</span></span>
+          </li>
+          <li>
+            <strong><span class="t-en">Ph.D. in Economics</span><span class="t-zh">经济学博士</span></strong>
+            <span><span class="t-en">National School of Development, Peking University</span><span class="t-zh">北京大学国家发展研究院</span></span>
+          </li>
+          <li>
+            <strong><span class="t-en">Contact</span><span class="t-zh">联系</span></strong>
+            <span><a href="mailto:fhchen2017@gmail.com">fhchen2017@gmail.com</a> · <a href="https://scholar.google.com/citations?user=wj5P8wwAAAAJ" target="_blank" rel="noopener">Google Scholar</a></span>
+          </li>
+        </ul>
+        <div class="about-chips reveal">
+          <span class="chip">JIE 2026</span>
+          <span class="chip"><span class="t-en">China Economic Quarterly ×3</span><span class="t-zh">《经济学(季刊)》×3</span></span>
+          <span class="chip"><span class="t-en">2 Open Datasets</span><span class="t-zh">2 个开放数据集</span></span>
+          <span class="chip"><span class="t-en">11 Publications</span><span class="t-zh">11 篇发表论文</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ RESEARCH ══════════ -->
+<section class="section research" id="research">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-eyebrow">02 · <span class="t-en">Research</span><span class="t-zh">研究</span></p>
+      <h2 class="sec-title"><span class="t-en">Selected Works</span><span class="t-zh">研究成果</span></h2>
+      <span class="sec-rule"></span>
+      <p class="sec-note">
+        <span class="t-en">My research focuses on the economics of ethnic networks — particularly overseas Chinese networks as intermediaries in trade, capital, technology, and knowledge flows between China and the global economy. I study their historical formation, long-run persistence, and evolving roles in China's industrial upgrading and firms' international expansion.</span>
+        <span class="t-zh">我的研究方向为族群网络经济学，重点关注海外华人网络在贸易、资本、技术与知识流动中连接中国与全球市场的中介作用，包括其历史形成、长期演化，以及在地缘政治变动下对中国产业升级与企业国际化的影响。</span>
+      </p>
+    </div>
+
+    <!-- Working papers -->
+    <h3 class="sub-head reveal"><span class="t-en">Working Papers</span><span class="t-zh">工作论文</span></h3>
+    <div class="wp-grid">
+      <article class="paper-card reveal">
+        <span class="seal" aria-hidden="true">获奖<br>贰等</span>
+        <h4>Exploring the Dynamics of Chinese Overseas Migration through Transnational Genealogical Lens</h4>
+        <p class="paper-authors">with Bin Xie, Yibo Zuo</p>
+        <p class="paper-note"><span class="t-en">Second Prize, Best Paper Award, 9th Symposium on Quantitative History, 2025</span><span class="t-zh">2025 第九届量化历史研究最佳论文奖 · 二等奖</span></p>
+      </article>
+      <article class="paper-card reveal">
+        <span class="seal" aria-hidden="true">获奖<br>壹等</span>
+        <h4>Technological Remittance</h4>
+        <p class="paper-authors">with Shengkai Zhou, Baojian Xie, Zhanchi Wu</p>
+        <p class="paper-note"><span class="t-en">First Prize, Guangdong Social Science Annual Conference, 2024 · previously circulated as 《“侨智”与中国科技创新》</span><span class="t-zh">2024 广东社科学术年会一等奖 · 曾以《“侨智”与中国科技创新》《族裔网络、贸易摩擦与知识侨汇》流传</span></p>
+      </article>
+    </div>
+
+    <!-- Publications timeline -->
+    <h3 class="sub-head reveal"><span class="t-en">Publications</span><span class="t-zh">发表论文</span></h3>
+    <div class="timeline">
+
+      <div class="tl-year reveal"><span>2026</span></div>
+      <article class="tl-item reveal">
+        <a class="tl-title" href="https://www.sciencedirect.com/science/article/abs/pii/S0022199626000838" target="_blank" rel="noopener">Familiar Strangers: The Role of Diaspora Networks in Foreign Investment and Long-run Development</a>
+        <p class="tl-authors"><b>Fanghao Chen</b>*, Ruichi Xiong, Xiaobo Zhang</p>
+        <p class="tl-journal"><span class="journal-tag">Journal of International Economics</span> 162, 104293</p>
+      </article>
+
+      <div class="tl-year reveal"><span>2025</span></div>
+      <article class="tl-item reveal">
+        <a class="tl-title" href="https://kns.cnki.net/kcms2/article/abstract?v=J4uTGPHNJK3n7ZgkzSLQjVCUZ5j2EcWcsGSWydkwT7GrawI4zzAi8dpb_t-Cp4Rtay3MMZsEW30lal6XIclaEBDr8ef42f24xaDP71w5sweZMUvKq0qVcW_DUPQRTIu7ctb4FYzJeqFj3CoyPn7mM5Y_59-zHkdzZACxhXKO2xWtKbglUHyHiQ==&uniplatform=NZKPT&language=CHS" target="_blank" rel="noopener">海外华商资产分布格局与发展规律——以 ORBIS 全球企业为主的分析</a>
+        <p class="tl-authors"><b>陈方豪</b>*，吴战篪，赵子乐，杜文馨，周圣楷</p>
+        <p class="tl-journal"><span class="journal-tag">华侨华人历史研究</span> 2025(3): 66–76</p>
+      </article>
+      <article class="tl-item reveal">
+        <a class="tl-title" href="https://www.sciencedirect.com/science/article/pii/S1043951X25001968?dgcid=author" target="_blank" rel="noopener">Urban Fragmentation and Innovation Collaboration: Evidence from China</a>
+        <p class="tl-authors"><b>Fanghao Chen</b>*, Ruichi Xiong, Shan Zhao</p>
+        <p class="tl-journal"><span class="journal-tag">China Economic Review</span> 94, 102538</p>
+      </article>
+      <article class="tl-item reveal">
+        <a class="tl-title" href="https://www.sciencedirect.com/science/article/pii/S2666933125000024" target="_blank" rel="noopener">The Economic Welfare Impacts of Transnational Clan Networks: Evidence from Transnational Clan Genealogies</a>
+        <p class="tl-authors"><b>Fanghao Chen</b>*, Yibo Zuo, Denggao Long</p>
+        <p class="tl-journal"><span class="journal-tag">China Economic Quarterly International</span> 5(1): 46–56</p>
+      </article>
+
+      <div class="tl-year reveal"><span>2024</span></div>
+      <article class="tl-item reveal">
+        <a class="tl-title" href="https://kns.cnki.net/kcms2/article/abstract?v=SY7jeTtuViJMznkgQ-EjaEMYuwccDQ8i1CVYb2JTAUldz2cGn8CmQKWtVXavF4tnpT0oY2Pe0xbDO3PRhPydu7rD4TcL5Fd1ffzXCK2k8c_dDrVUi6cm14eKUp6NFw6Yh50WArh7ImGAaYW0G_nYpmNQebBDWqZlUXZUybbL00i91mKjBBzHfrOHjOoNM480&uniplatform=NZKPT&language=CHS" target="_blank" rel="noopener">涉侨宗族网络的经济福利效应——来自涉侨族谱的证据</a>
+        <p class="tl-authors"><b>陈方豪</b>*，左毅博，龙登高</p>
+        <p class="tl-journal"><span class="journal-tag">经济学(季刊)</span> 24(5): 1704–1718 · <a href="#data" class="tl-datalink"><span class="t-en">open data</span><span class="t-zh">数据共享</span></a></p>
+      </article>
+      <article class="tl-item reveal">
+        <a class="tl-title" href="https://kns.cnki.net/kcms2/article/abstract?v=IXLqNOIxNnuPuo0uw7xJBBdYQ7JTDqyXvg9PZNboApr7GkSIBzqDtsDeHdZuLSofHhiM_zYUkGe7cBbNwscE16Hr6sQ4w784v_4UvaJLBhXfYaaPucnwxwnZ6ml2ZnavXP2FgjPBm2-MMYZwz0wY0bIT5H1_xd838KNbk-votsWd-nVScaTPSkUBCnOwKAj0&uniplatform=NZKPT&language=CHS" target="_blank" rel="noopener">参军经历、退伍政策与创业行为</a>
+        <p class="tl-authors"><b>陈方豪</b>*，张晓波</p>
+        <p class="tl-journal"><span class="journal-tag">制度经济学研究</span> 84(2): 35–70</p>
+      </article>
+
+      <div class="tl-year reveal"><span>2023</span></div>
+      <article class="tl-item reveal">
+        <span class="mini-seal" aria-hidden="true">封面</span>
+        <a class="tl-title" href="https://kns.cnki.net/kcms2/article/abstract?v=La2KlAOQ31QZ4LHEPRQTy3rMKKKmAzji44UI9zGYtUF7O-Hst4RrHDEbrvmNwcksyy8F1g00KvW27S5d7idZV7A_dXlqbPZQDJp9iV2LvNK1BUfxCDZBPd0Kay9nBRVAvqae6y0tueE=&uniplatform=NZKPT&language=CHS" target="_blank" rel="noopener">突破城市发展的边界：撤县设区与城市内部协同发展</a>
+        <p class="tl-authors"><b>陈方豪</b>*，叶菁菁</p>
+        <p class="tl-journal"><span class="journal-tag">经济学(季刊)</span> 23(5): 1776–1792 · <span class="t-en">cover article</span><span class="t-zh">封面文章</span></p>
+      </article>
+      <article class="tl-item reveal">
+        <span class="mini-seal" aria-hidden="true">封面</span>
+        <a class="tl-title" href="https://kns.cnki.net/kcms2/article/abstract?v=3uoqIhG8C44YLTlOAiTRKu87-SJxoEJu6LL9TJzd50n7EU_Z-wbXjTajTLE0Q212OC_2e9Ey6tEM2Bigkp2lsphd1d031YnA&uniplatform=NZKPT" target="_blank" rel="noopener">禀赋结构一致的技术调整：技术可转换性、人力资本与结构转型</a>
+        <p class="tl-authors"><b>陈方豪</b>*，樊仲琛</p>
+        <p class="tl-journal"><span class="journal-tag">经济学(季刊)</span> 23(4): 1336–1355 · <span class="t-en">cover article, reprinted in </span><span class="t-zh">封面文章，《中国社会科学文摘》2023年第12期转载</span><span class="t-en">CASS Digest</span></p>
+      </article>
+
+      <div class="tl-year reveal"><span>2022</span></div>
+      <article class="tl-item reveal">
+        <a class="tl-title" href="https://kns.cnki.net/kcms2/article/abstract?v=3uoqIhG8C44wp2hFvIb_znleNvEqg4RtCv9vPRf2sA-jdv978489j6hLoFZlwBqHsT6Mr6DFMMps2en_HrmWTJths_yH02b1&uniplatform=NZKPT&language=CHS" target="_blank" rel="noopener">以侨为桥：侨资企业与中国的外向型发展</a>
+        <p class="tl-authors"><b>陈方豪</b>*，熊瑞驰</p>
+        <p class="tl-journal"><span class="journal-tag">中国经济学</span> 2022(1): 118–158 · <span class="t-en">inaugural issue</span><span class="t-zh">创刊号</span></p>
+      </article>
+
+      <div class="tl-year reveal"><span>2017</span></div>
+      <article class="tl-item reveal">
+        <a class="tl-title" href="http://www.cnki.com.cn/Article/CJFDTOTAL-GLSJ201712009.htm" target="_blank" rel="noopener">个人所得税减免会增加劳动供给吗？——来自准自然实验的证据</a>
+        <p class="tl-authors">叶菁菁，吴燕，<b>陈方豪</b>*，王宇晴</p>
+        <p class="tl-journal"><span class="journal-tag">管理世界</span> 2017(12): 20–32</p>
+      </article>
+    </div>
+
+    <!-- Work in progress -->
+    <h3 class="sub-head reveal"><span class="t-en">Selected Work in Progress</span><span class="t-zh">在研工作</span></h3>
+    <ul class="wip-list reveal">
+      <li><b>Rerouted Supply Chains</b> <span>with Yibuo Zuo, Wenjing Li, Zhihang Zhou</span></li>
+      <li><b>Sun Yat-sen and Diaspora</b> <span>with Yuchen Xu, Zhanchi Wu, Jiancheng He</span></li>
+      <li><b>Industrial Linkages and Industrial Development</b> <span>with Loren Brandt, Gilles Duranton</span></li>
+      <li><b>Spatial Dynamics of Industrial Clusters</b> <span>with Zhongchen Fan</span></li>
+      <li><b>Tides of Openness: China's Policy Journey</b></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ TEACHING ══════════ -->
+<section class="section teaching" id="teaching">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-eyebrow">03 · <span class="t-en">Teaching</span><span class="t-zh">教学</span></p>
+      <h2 class="sec-title"><span class="t-en">Courses &amp; Workshops</span><span class="t-zh">课程与工作坊</span></h2>
+      <span class="sec-rule"></span>
+    </div>
+    <div class="teach-grid">
+      <article class="teach-card reveal">
+        <p class="teach-kicker"><span class="t-en">Featured · AI Workflow</span><span class="t-zh">特色 · AI 工作流</span></p>
+        <h4><a href="https://my.feishu.cn/wiki/EofHw1HRhiNB1jkdzR9cQJhrnPe" target="_blank" rel="noopener">AI时代下的经管科研工作流重构</a></h4>
+        <p class="teach-meta"><span class="t-en">Rebuilding the economics &amp; management research workflow in the age of AI</span><span class="t-zh">面向经管科研的 AI 工作流重构（飞书教学页）</span></p>
+      </article>
+      <article class="teach-card reveal">
+        <p class="teach-kicker"><span class="t-en">Featured · AI Workflow</span><span class="t-zh">特色 · AI 工作流</span></p>
+        <h4><a href="https://my.feishu.cn/wiki/XQTkw2VwliuPl3klXXHcon7anCh" target="_blank" rel="noopener">办公提效新技能：行政办公必备AI实用工具课</a></h4>
+        <p class="teach-meta"><span class="t-en">Practical AI tools for administrative office work</span><span class="t-zh">面向行政办公场景的 AI 实用工具课（飞书教学页）</span></p>
+      </article>
+      <article class="teach-card reveal">
+        <p class="teach-kicker"><span class="t-en">2026 Fall · Undergraduate</span><span class="t-zh">2026 秋 · 本科</span></p>
+        <h4><span class="t-en">Investment / Principles of Chinese Business Management</span><span class="t-zh">投资学 · 华商管理概论</span></h4>
+        <p class="teach-meta"><span class="t-en">Two undergraduate courses scheduled for Fall 2026</span><span class="t-zh">2026 年秋季学期开设两门本科生课程</span></p>
+      </article>
+      <article class="teach-card reveal">
+        <p class="teach-kicker"><span class="t-en">2026 Spring · Undergraduate</span><span class="t-zh">2026 春 · 本科</span></p>
+        <h4><a href="https://my.feishu.cn/wiki/ScLIwwHIDikI68kNJMgc0xVon9t" target="_blank" rel="noopener"><span class="t-en">Investment</span><span class="t-zh">投资学</span></a> · <a href="https://my.feishu.cn/wiki/ANTiwy2QviW4Z2kyeIUc4CAunLc" target="_blank" rel="noopener"><span class="t-en">Corporate Finance</span><span class="t-zh">公司财务</span></a></h4>
+        <p class="teach-meta"><span class="t-en">Course pages on Feishu (password: year-classroom)</span><span class="t-zh">飞书课程页（密码：年份-教室号）</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ DATA ══════════ -->
+<section class="section data" id="data">
+  <div class="container">
+    <div class="sec-head sec-head-dark reveal">
+      <p class="sec-eyebrow">04 · <span class="t-en">Data</span><span class="t-zh">数据</span></p>
+      <h2 class="sec-title"><span class="t-en">Open Datasets</span><span class="t-zh">开放数据</span></h2>
+      <span class="sec-rule"></span>
+      <p class="sec-note">
+        <span class="t-en">All datasets are freely available for academic use. Please cite the corresponding paper(s) if you use them in your research.</span>
+        <span class="t-zh">所有数据集均可免费用于学术研究，使用时请引用对应论文。</span>
+      </p>
+    </div>
+    <div class="data-grid">
+      <article class="data-card data-card-img reveal">
+        <figure class="data-fig" aria-hidden="true">
+          <img src="assets/img/archive-identity-cert.jpg" alt="" style="object-position: 50% 68%;">
+          <figcaption>Certificate of identity, Louie Jock Sung 雷澤森, 1910 · NARA / Wikimedia Commons, public domain</figcaption>
+        </figure>
+        <div class="data-body">
+          <h4><span class="t-en">Chinese Character–English Spelling Two-way Crosswalk for Chinese Surnames</span><span class="t-zh">华人姓氏中英文双向对照数据库</span></h4>
+          <p><span class="t-en">A probabilistic two-way crosswalk between Chinese surname characters and their English spellings across transliteration systems and dialect groups — infrastructure for cross-language record linkage in Chinese migration and diaspora studies.</span><span class="t-zh">提供华人姓氏汉字与多种拼写体系及方言音译之间的英文双向概率对照，为华人移民研究中的跨语言数据匹配提供基础工具。</span></p>
+          <p class="data-cite">Chen, Xiong &amp; Zhang. <i>Journal of International Economics</i>, 162, 104293.</p>
+          <a class="btn btn-solid btn-sm" href="assets/EngSur2ChnSur-mapping.zip" download><span class="t-en">Download (.zip)</span><span class="t-zh">下载 (.zip)</span></a>
+        </div>
+      </article>
+      <article class="data-card data-card-img reveal">
+        <figure class="data-fig" aria-hidden="true">
+          <img src="assets/img/archive-zupu-zhao.jpg" alt="">
+          <figcaption>《慈溪房趙族家譜》 · Wikimedia Commons, CC BY-SA 4.0</figcaption>
+        </figure>
+        <div class="data-body">
+          <h4><span class="t-en">Transnational Genealogies Database</span><span class="t-zh">涉侨族谱地理分布数据</span></h4>
+          <p><span class="t-en">City–surname distribution of transnational genealogies held by the Jinan University Library — the historical geographic footprint of overseas-Chinese clan networks, for research on diaspora networks, migration history, and their long-run economic effects.</span><span class="t-zh">记录暨南大学图书馆馆藏涉侨族谱在城市—姓氏层面的分布，刻画海外华人宗族网络的历史地理特征，可用于华人网络、移民史及其长期经济效应研究。</span></p>
+          <p class="data-cite">陈方豪, 左毅博, 龙登高. <i>经济学(季刊)</i>, 2024, 24(5): 1704–1718.</p>
+          <a class="btn btn-solid btn-sm" href="assets/涉侨族谱分布241028.rar" download><span class="t-en">Download (.rar)</span><span class="t-zh">下载 (.rar)</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ NETWORK ══════════ -->
+<section class="section network" id="network">
+  <div class="container">
+    <div class="sec-head reveal">
+      <p class="sec-eyebrow">05 · <span class="t-en">Network</span><span class="t-zh">网络</span></p>
+      <h2 class="sec-title"><span class="t-en">People &amp; Voices</span><span class="t-zh">师友与声音</span></h2>
+      <span class="sec-rule"></span>
+      <p class="sec-note">
+        <span class="t-en">I am fortunate to have been trained under the supervision of Xiaobo Zhang and Loren Brandt, and to work with wonderful collaborators. I am also affiliated with the Center for Enterprise Research at PKU and co-supervise the ESIEC project.</span>
+        <span class="t-zh">有幸师从张晓波教授与 Loren Brandt 教授，并与众多优秀学者合作。同时兼任北京大学企业大数据研究中心研究员，联合主持中国企业创新创业调查（ESIEC）项目。</span>
+      </p>
+    </div>
+
+    <div class="graph-wrap reveal">
+      <svg id="collabGraph" viewBox="0 0 1000 560" role="img" aria-label="Collaboration network"></svg>
+      <div class="graph-tip" id="graphTip" hidden></div>
+      <p class="graph-hint"><span class="t-en">Hover a node for details · click to visit homepage</span><span class="t-zh">悬停查看详情 · 点击访问主页</span></p>
+    </div>
+
+    <div class="affil-row reveal">
+      <a class="chip chip-link" href="https://cer.gsm.pku.edu.cn/" target="_blank" rel="noopener">Center for Enterprise Research, PKU</a>
+      <a class="chip chip-link" href="https://opendata.pku.edu.cn/dataset.xhtml?persistentId=doi:10.18170/DVN/DLBWAK&amp;language=en" target="_blank" rel="noopener">ESIEC</a>
+    </div>
+
+    <h3 class="sub-head reveal"><span class="t-en">Media Coverage</span><span class="t-zh">媒体报道</span></h3>
+    <div class="press-row reveal">
+      <a class="press-card" href="https://news.ycwb.com/2024-12/20/content_53131878.htm" target="_blank" rel="noopener">
+        <span class="press-name">羊城晚报</span>
+        <span class="press-title">《“侨智”架桥 赋能中国新质生产力发展》</span>
+        <span class="press-year">2024.12</span>
+      </a>
+      <a class="press-card" href="https://m.21jingji.com/article/20230226/herald/e2e4d3fb4d0065ef936414ad29c15860.html" target="_blank" rel="noopener">
+        <span class="press-name">21世纪经济报道</span>
+        <span class="press-title">《侨商是广东走向高质量发展的重要助力》</span>
+        <span class="press-year">2023.02</span>
+      </a>
+      <a class="press-card" href="https://new.qq.com/rain/a/20230104A01NGR00" target="_blank" rel="noopener">
+        <span class="press-name">南方日报</span>
+        <span class="press-title">《广东锻造制造业当家“主心骨”》</span>
+        <span class="press-year">2023.01</span>
+      </a>
+      <div class="press-card press-card-brand">
+        <img src="assets/img/duhai-fangcheng-logo.png" alt="渡海方程 logo">
+        <span class="press-title"><span class="t-en">WeChat / RED column: SeaQuation</span><span class="t-zh">公众号 / 小红书：渡海方程 SeaQuation</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-name">Fanghao Chen <span>陈方豪</span></p>
+      <p class="footer-line"><span class="t-en">Assistant Professor, School of Management, Jinan University</span><span class="t-zh">暨南大学管理学院助理教授</span></p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:fhchen2017@gmail.com">Email</a>
+      <a href="https://scholar.google.com/citations?user=wj5P8wwAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://github.com/FanghaoChen/homepage" target="_blank" rel="noopener">GitHub</a>
+      <a class="t-en" href="assets/FanghaoChen_CV_260621.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      <a class="t-zh" href="assets/陈方豪_暨大管院_260621.pdf" target="_blank" rel="noopener">中文简历</a>
+    </div>
+  </div>
+  <div class="container footer-credit">
+    <p><span class="t-en">Archival photographs: Wikimedia Commons (public domain / CC BY-SA 4.0). Dotted world map generated from Natural Earth via world-atlas.</span><span class="t-zh">档案照片来自 Wikimedia Commons（公有领域 / CC BY-SA 4.0）；点阵世界地图基于 Natural Earth（world-atlas）程序生成。</span></p>
+    <p>© 2026 Fanghao Chen</p>
+  </div>
+</footer>
+
+<script src="assets/map-dots.js"></script>
+<script src="assets/main.js"></script>
+</body>
+</html>
