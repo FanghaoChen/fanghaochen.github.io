@@ -596,7 +596,7 @@ body[data-lang="zh"] .hero-name { letter-spacing: .1em; }
   font-size: .95rem;
 }
 .wip-list b { font-family: var(--font-display); font-weight: 600; color: var(--ink); display: block; }
-.wip-list span { color: var(--text-soft); font-size: .85rem; }
+.wip-list li > span { color: var(--text-soft); font-size: .85rem; }
 
 /* ══════════ TEACHING ══════════ */
 .teaching { background: var(--paper); }
