@@ -509,6 +509,7 @@ body[data-lang="zh"] .hero-name { letter-spacing: .1em; }
 }
 .tl-datalink { color: var(--cinnabar); font-weight: 600; text-decoration: none; }
 .tl-datalink:hover { text-decoration: underline; }
+.tl-note { display: block; flex-basis: 100%; width: 100%; color: var(--sepia); }
 .mini-seal {
   float: right;
   display: grid;

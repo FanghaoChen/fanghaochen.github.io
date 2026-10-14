@@ -59,5 +59,6 @@ python -m http.server 8765
 ## 维护
 
 - 更新论文/课程：直接编辑 `index.html` 对应区块（中英双语文本都在 `t-en` / `t-zh` 标签内）
+- 论文引用格式规范见 `AGENTS.md`（期刊名用黑色气泡块，获奖/转载等注记另起一行 `.tl-note`）
 - 重新生成地图点阵：`cd build && node gen-map-dots.js`（需联网）
 - 截图脚本：`build/preview-shot.js`、`build/reshot.js`（需本机 puppeteer 环境）
