@@ -423,6 +423,17 @@ body[data-lang="zh"] .hero-name { letter-spacing: .1em; }
 .about-facts a:hover { border-bottom-color: var(--cinnabar); }
 .brand-inline { display: inline-flex; align-items: center; gap: .55rem; }
 .brand-logo { height: 26px; width: auto; mix-blend-mode: multiply; }
+.wechat-account { min-width: 0; }
+.about-facts .wechat-qr-link {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: .85rem;
+  border: 1px solid var(--sepia-line);
+  background: #fff;
+}
+.wechat-qr { width: 180px; height: auto; }
+.wechat-qr-link:focus-visible { outline: 2px solid var(--cinnabar); outline-offset: 4px; }
 .about-chips { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: .6rem; }
 .chip {
   display: inline-block;
@@ -739,7 +750,7 @@ body[data-lang="zh"] .hero-name { letter-spacing: .1em; }
 .footer-name { font-family: var(--font-display); font-weight: 600; font-size: 1.5rem; }
 .footer-name span { font-family: var(--font-zh); color: var(--sepia-soft); margin-left: .5rem; font-size: 1.1rem; }
 .footer-line { margin-top: .4rem; font-size: .85rem; color: rgba(243,235,220,.6); }
-.footer-links { display: flex; gap: 1.6rem; flex-wrap: wrap; }
+.footer-links { display: flex; align-items: flex-start; gap: 1.6rem; flex-wrap: wrap; }
 .footer-links a {
   color: rgba(243,235,220,.8);
   text-decoration: none;
@@ -749,11 +760,6 @@ body[data-lang="zh"] .hero-name { letter-spacing: .1em; }
   transition: color .25s, border-color .25s;
 }
 .footer-links a:hover { color: var(--gold); border-bottom-color: var(--gold); }
-.footer-links .footer-static {
-  color: rgba(243,235,220,.8);
-  font-size: .85rem;
-  letter-spacing: .06em;
-}
 .footer-credit {
   display: flex;
   justify-content: space-between;
